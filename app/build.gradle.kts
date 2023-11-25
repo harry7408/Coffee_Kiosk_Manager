@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -61,4 +62,11 @@ dependencies {
     implementation("io.github.reactivecircus.flowbinding:flowbinding-preference:${flowbinding_version}")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-recyclerview:${flowbinding_version}")
     implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:${flowbinding_version}")
+
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-firestore:24.9.1")
+    implementation("com.google.firebase:firebase-database-ktx:20.3.0")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.9.1")
 }

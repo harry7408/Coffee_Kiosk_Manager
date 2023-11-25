@@ -7,7 +7,29 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/missionInputLayout"
+        android:id="@+id/missionNumberInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_32"
+        style="@style/CustomTextInputStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/missionDetailInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/missionNumberInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/edt_number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/missionDetailInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -15,26 +37,61 @@
         android:layout_marginStart="@dimen/dp_32"
         android:layout_marginEnd="@dimen/dp_32"
         style="@style/CustomTextInputStyle"
-        app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/missionNumberInputLayout"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/missionInputEditText"
+            android:id="@+id/missionDetailInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/edt_hint"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/makeButton"
-        app:layout_constraintTop_toBottomOf="@id/missionInputLayout"
+
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_24"
-        app:layout_constraintStart_toStartOf="@id/missionInputLayout"
-        app:layout_constraintEnd_toEndOf="@id/missionInputLayout"
+        app:singleSelection="true"
+        app:layout_constraintTop_toBottomOf="@id/missionDetailInputLayout"
+        app:layout_constraintStart_toStartOf="@id/missionNumberInputLayout"
+        app:layout_constraintEnd_toEndOf="@id/missionNumberInputLayout">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/easyChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/easy"
+            style="@style/chip_style"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/normalChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/normal"
+            style="@style/chip_style" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/hardChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hard"
+            style="@style/chip_style"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/makeButton"
+        app:layout_constraintTop_toBottomOf="@id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        app:layout_constraintStart_toStartOf="@id/missionDetailInputLayout"
+        app:layout_constraintEnd_toEndOf="@id/missionDetailInputLayout"
         android:text="@string/make"/>
 
 
