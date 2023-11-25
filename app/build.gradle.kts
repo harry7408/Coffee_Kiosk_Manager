@@ -48,4 +48,17 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // FlowBinding
+    val flowbinding_version = "1.2.0"
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-android:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-material:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-activity:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-appcompat:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-core:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-lifecycle:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-navigation:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-preference:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-recyclerview:${flowbinding_version}")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-viewpager2:${flowbinding_version}")
 }

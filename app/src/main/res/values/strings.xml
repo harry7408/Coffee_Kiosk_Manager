@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CoffeeKioskManager</string>
+    <string name="edt_hint">미션 제작</string>
+    <string name="make">미션 만들기</string>
+    <string name="helper">미션을 입력해 주세요</string>
+
+    <string name="error_messsage">반드시 입력해 주세요</string>
 </resources>
