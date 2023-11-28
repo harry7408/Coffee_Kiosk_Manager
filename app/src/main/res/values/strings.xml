@@ -2,8 +2,10 @@
     <string name="app_name">CoffeeKioskManager</string>
     <string name="edt_hint">미션 제작</string>
     <string name="edt_number">미션 번호</string>
-    <string name="make">미션 만들기</string>
+    <string name="edt_name">미션 이름</string>
+    <string name="make">미션 정보</string>
     <string name="number_helper">번호를 입력해 주세요</string>
+    <string name="name_helper">제목을 입력해 주세요</string>
     <string name="helper">미션을 입력해 주세요</string>
     <string name="error_message">반드시 입력해 주세요</string>
     <string name="error_toast">모두 입력해 주세요</string>
