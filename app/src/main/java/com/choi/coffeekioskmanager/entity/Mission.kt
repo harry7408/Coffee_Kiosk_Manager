@@ -7,6 +7,7 @@ data class Mission(
     val name: String = "",
     val missionDetail: String = "",
     val difficulty: String = "",
+    val isSolved: Boolean=false,
 ) {
     @Exclude
     fun toMap(): Map<String, Any> {
@@ -14,7 +15,8 @@ data class Mission(
             "_id" to _id,
             "name" to name,
             "missionDetail" to missionDetail,
-            "difficulty" to difficulty
+            "difficulty" to difficulty,
+            "isSolved" to isSolved
         )
     }
 }

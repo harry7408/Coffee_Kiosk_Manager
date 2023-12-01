@@ -48,7 +48,8 @@ class MainActivity : AppCompatActivity() {
                         missionNumberInputEditText.text.toString().trim().toLong(),
                         missionNameInputEditText.text.toString().toString(),
                         missionDetailInputEditText.text.toString().trim(),
-                        checkedChip.text.toString().trim()
+                        checkedChip.text.toString().trim(),
+                        false
                     )
 
                     insertFireStore(missionInfo)
