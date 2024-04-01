@@ -15,9 +15,17 @@ Language & Tools 🧰
 <p align="left">
  <img src="https://img.shields.io/badge/Android Studio Gifffe-3DDC84?style=flat-square&logo=android-studio&logoColor=white"/>
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white"/> 
+  : 앱 개발 환경 및 언어
+</p>
+<p align="left">
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
+  : 코드 형상 관리
+</p>
+<p align="left"> 
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white"/>
+  : FireBase FireStore Database 이용 (NOSQL)
+</p>
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
 </p>
 
